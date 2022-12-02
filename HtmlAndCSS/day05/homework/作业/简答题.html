@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      font-size: 20px;
+      font-family: '微软雅黑';
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+    p {
+      display: none;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>题目1：三种css的书写位置？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q1">查看参考答案</button>
+  <p class="q1">
+  1.内嵌样式：css写在style标签里，style标签写在head标签里，title标签下面<br>
+  2.行内样式：css写在标签的style属性中（留给js使用）<br>
+  3.外联样式：css写在单独的.css文件中，需要同时link标签引入，link标签的位置和style标签的位置相同。
+  </p>
+  <hr>
+
+  <h2>题目2：写出text-相关的属性，以及各自的取值</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q2">查看参考答案</button>
+  <p class="q2">
+  1.text-indent：文本的缩进（首行缩进两个字符：2em）<br>
+  2.text-align：文本的对齐方式（left/center/right）<br>
+  3.text-decoration：文本的修饰（underline、line-through）
+  </p>
+  <hr>
+
+  <h2>题目3：写出文本格式化标签，以及css的替代</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q3">查看参考答案</button>
+  <p class="q3">
+  1.加粗：b标签、strong标签、font-weight：700；<br>
+  2.下划线：u标签、ins标签、text-decoration：underline；<br>
+  3.倾斜：i标签、em标签、font-style：italic;<br>
+  4.删除线：s标签、del标签、text-decoration：line-through；
+  </p>
+  <hr>
+
+  <h2>题目4：text-align：center可以让哪些元素水平居中？？给谁设置？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q4">查看参考答案</button>
+  <p class="q4">
+    text-align：center；可以让文字、图片、span在盒子（div/h/p）中水平居中！！
+  </p>
+  <hr>
+
+  <h2>题目5：margin：0 auto的作用是什么？给谁设置？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q5">查看参考答案</button>
+  <p class="q5">
+    margin：0 auto;可以让子盒子在父盒子中水平居中！！
+  </p>
+  <hr>
+
+  <h2>题目6：css中有哪些属性可以继承？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q6">查看参考答案</button>
+  <p class="q6">
+    1.color：颜色<br>
+    2.font- 开头的：字体相关属性 style weight size  family<br>
+    3.text- 开头的：文本相关属性 indent align  decoration<br>
+    4.line- 开头的：line-height(行高、明天说) <br>
+  </p>
+  <hr>
+
+  <h2>题目7：写出优先级的大小排行？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q7">查看参考答案</button>
+  <p class="q7">
+    继承 < 通配符 < 标签选择器 < 类选择器 < ID选择器 < 行内样式 <　!important
+  </p>
+  <hr>
+
+  <h2>题目8：权重的计算公式是什么？？每一个数字表示什么？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q8">查看参考答案</button>
+  <p class="q8">
+    公式算法：（0,0,0,0）<br>
+    1.第一个数字：行内样式的个数<br>
+    2.第二个数字：ID选择器的个数<br>
+    3.第三个数字：类选择器的个数<br>
+    4.第四个数字：标签选择器的个数
+  </p>
+  <hr>
+
+  <h2>题目9：写出font-相关的属性？？连写的顺序？？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q9">查看参考答案</button>
+  <p class="q9">
+    1.font-style <br>
+    2.font-weight <br>
+    3.font-size <br>
+    4.font-family <br>
+    swsf 稍微舒服~
+  </p>
+  <hr>
+
+  <script>
+    // 获取页面中的所有按钮标签
+    var btns = document.getElementsByTagName('button');
+    // 给页面中所有的按钮标签注册事件
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].onclick = show;
+    }
+    // 事件控制p标签的显示与隐藏
+    function show() {
+      var dis = document.getElementsByClassName(this.className)[1].style.display;
+
+      if (dis) {
+        document.getElementsByClassName(this.className)[1].style.display = '';
+      } else {
+        document.getElementsByClassName(this.className)[1].style.display = 'block';
+
+      }
+    }
+  </script>
+</body>
+
+</html>

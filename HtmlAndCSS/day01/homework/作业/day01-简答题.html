@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      font-size: 18px;
+      font-family: '微软雅黑';
+    }
+
+    button {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    p {
+      display: none;
+      font-size: 20px;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>题目1：常见的五大浏览器有哪些？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q1">查看参考答案</button>
+  <p class="q1">常用的浏览器有IE(Edge)、火狐（Firefox）、谷歌（Chrome）、Safari（苹果电脑自带）和Opera等。我们平时称为五大浏览器。</p>
+  <hr>
+
+  <h2>题目2：五大浏览器对应于哪些内核？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q2">查看参考答案</button>
+  <p class="q2">
+  1. IE （edge）（Trident）<br>
+  2. 火狐（firefox）（Gecko）<br>
+  3. 苹果（safari）（webkit）<br>
+  4. 谷歌（chrome）（blink）<br>
+  5. 欧朋（Opera）（blink  早期：presto ）</p>
+  <hr>
+
+  <h2>题目3：Web标准的内容是？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q3">查看参考答案</button>
+  <p class="q3">
+  主要包括:   HTML（结构）、CSS（样式）和  JS（行为）三个方面。</p>
+  <hr>
+
+  <h2>题目4：HTML的骨架怎么写？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q4">查看参考答案</button>
+  <p class="q4">
+    &lt;html><br>   
+    &nbsp;&nbsp;&lt;head> <br>    
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title>页面的标题&lt;/title><br>
+    &nbsp;&nbsp;&lt;/head><br>
+    &nbsp;&nbsp;&lt;body><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;写咱们自己的代码<br>
+    &nbsp;&nbsp;&lt;/body><br>
+    &lt;/html>
+  </p>
+  <hr>
+
+  <h2>题目5：标签的关系与标签的分类？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q5">查看参考答案</button>
+  <p class="q5">
+    标签的关系有：嵌套关系（父子关系）、并列关系（兄弟）<br>
+    标签的分类有：双标签、单标签
+  </p>
+  <hr>
+
+  <h2>题目6：写出文本格式化标签（没语义的和有语义的）？</h2>
+  <div>你的答案：</div>
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+  <br>
+  <button class="q6">查看参考答案</button>
+  <p class="q6">
+  没语义的：<br>
+  &lt;b>&lt;/b>: 加粗<br>
+  &lt;u>&lt;/u>: 下划线<br>
+  &lt;i>&lt;/i>: 倾斜<br>
+  &lt;s>&lt;/s>: 删除线<br>
+  有语义的：<br>
+  &lt;strong>&lt;/strong>: 加粗<br>
+  &lt;ins>&lt;/ins>: 下划线<br>
+  &lt;em>&lt;/em> 倾斜<br>
+  &lt;del>&lt;/del>: 删除线<br>
+  </p>
+  <hr>
+  <script>
+    // 获取页面中的所有按钮标签
+    var btns = document.getElementsByTagName('button');
+    // 给页面中所有的按钮标签注册事件
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].onclick = show;
+    }
+    // 事件控制p标签的显示与隐藏
+    function show() {
+      var dis = document.getElementsByClassName(this.className)[1].style.display;
+
+      if (dis) {
+        document.getElementsByClassName(this.className)[1].style.display = '';
+      } else {
+        document.getElementsByClassName(this.className)[1].style.display = 'block';
+
+      }
+    }
+  </script>
+</body>
+
+</html>

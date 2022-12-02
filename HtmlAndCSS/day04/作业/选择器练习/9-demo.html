@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    li a {
+      color: pink;
+     }
+
+    /* .right {
+      color: red;
+    }
+
+    .nav, .sitenav {
+      font: 28px "微软雅黑" 
+    } */
+
+    /* .right a {
+      color: red;
+    }
+    .nav a {
+      color: pink;
+    }
+    .nav,.sitenav {
+      font-size: 28px;
+      font-family: '微软雅黑';
+    } */
+
+    .nav>ul>li>a {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <!-- 主导航栏 -->
+  <div class="nav">    
+    <ul>
+      <li><a href="#">公司首页</a></li>
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司产品</a></li>
+    <li>
+           <a href="#">联系我们</a>
+       <ul>
+          <li><a href="#">公司邮箱</a></li>
+          <li><a href="#">公司电话</a></li>
+       </ul>
+    </li>
+    </ul>
+  </div>
+  <!-- 侧导航栏 -->
+  <div class="sitenav">    
+    <div class="left">左侧侧导航栏</div>
+    <div class="right"><a href="#">登录</a></div>
+  </div>
+
+  <!-- 
+    在不修改以上代码的前提下，完成以下任务：
+
+    1. 链接登录的颜色为红色，同时主导航栏里面的所有的链接改为粉色（简单）
+    2. 主导航栏和侧导航栏里面文字都是28像素并且是微软雅黑（中等）
+    3. 主导航栏里面的一级菜单链接文字颜色为绿色（难）
+
+    答案（能完成效果即可）
+    .right a {
+      color: red;
+    }
+    .nav a {
+      color: pink;
+    }
+    .nav,.sitenav {
+      font-size: 28px;
+      font-family: '微软雅黑';
+    }
+    .nav>ul>li>a {
+      color: green;
+    }
+
+   -->
+</body>
+</html>

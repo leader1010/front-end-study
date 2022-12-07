@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var save_money = 0
+        while (true) {
+            var cmd = prompt('请输入您要的操作\n 1.存钱\n 2.取钱\n 3.显示余额\n 4.退出')
+            if (cmd == 1) {
+                save_money += parseFloat(prompt('存入金额'))
+            } else if (cmd == 2) {
+                save_money -= parseFloat(prompt('取出金额'))
+            } else if (cmd == 3) {
+                alert('余额为' + save_money)
+            } else if (cmd == 4) {
+                break
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

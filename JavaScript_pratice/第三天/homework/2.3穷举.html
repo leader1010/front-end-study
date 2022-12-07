@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 穷举：从1遍历到无穷大，找出符合条件的
+        // 需求 ：有一群人，如果3个人站一排多出一人，如果4个人站一排 多出来2个人；如果5人一拍，多出3人。
+        // 请问：这群人的数量
+        for (var i = 1; i <= Infinity; i++) {
+
+            // 假设总的人数就是 i
+            if (i % 3 == 1 && i % 4 == 2 && i % 5 == 3) {
+                console.log("人数为" + i);
+                break;
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

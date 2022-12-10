@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var num = 1;
+        function demo(){
+            console.log(num); // undefined var num = 2;声明了遍历num,但不赋值
+            function demoSon(){
+                console.log(num); // 2 作用域链 就近原则 闭包
+                num = 3;  // 修改局部变量num
+                console.log(num); // 3
+            }
+            var num = 2
+            demoSon();
+        }
+        demo();
+        console.log(num) // 1
+    </script>
+</head>
+<body>
+
+</body>
+</html>

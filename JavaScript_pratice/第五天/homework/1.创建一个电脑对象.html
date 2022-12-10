@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Calcutator(color, weight, brand, type) {
+            this.color = color
+            this.weight = weight
+            this.brand = brand
+            this.type = type
+            this.watch = function () {
+                console.log('watch movie')
+            }
+            this.play = function () {
+                console.log('play game')
+            }
+            this.code = function () {
+                console.log('coding')
+            }
+        }
+
+        com = new Calcutator('yellow', 2.1, 'hp', 'game')
+        com.code()
+        com.play()
+        com.watch()
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

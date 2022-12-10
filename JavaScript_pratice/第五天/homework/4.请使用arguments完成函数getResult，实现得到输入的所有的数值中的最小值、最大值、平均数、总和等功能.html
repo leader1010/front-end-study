@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function get_result() {
+            var sum = 0
+            var max = arguments[0]
+            for (var i = 0; i <= arguments.length - 1; i++) {
+                sum += arguments[i]
+                max = max > arguments[i] ? max : arguments[i]
+            }
+            var res = new Object()
+            res.sum = sum
+            res.max = max
+            res.averages = sum / arguments.length
+            return res
+        }
+        res = get_result(1, 2, 4)
+        console.log(res.sum);
+        console.log(res.max)
+        console.log(res.averages)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 写一个函数，能返回传入的任意两个数字的最大值。
+        // function max(num1, num2) {
+        //     return num1 > num2 ? num1 : num2
+        // }
+        //
+        // var a = max(1, 2)
+        // console.log(a)
+
+        // 写一个函数，能返回传入的任意三个数字的最大值。
+        // function max_thr(num1, num2, num3) {
+        //     var temp = num1 > num2 ? num1 : num2
+        //     var result = temp > num3 ? temp : num3
+        //     return result
+        // }
+        //
+        // var b = max_thr(1, 2, 3)
+        // console.log(b)
+
+        // 写一个函数，能判断传入的一个数值是否是质数，如果是质数返回true，如果不是质数返回false，(质数：从2开始只能被1和自身整数的数)
+        // function is_zhishu(num1) {
+        //     if (num1 <= 1){
+        //         return false
+        //     }
+        //     var i = 2
+        //     while (true) {
+        //         if (i === num1) {
+        //             return true
+        //         }
+        //         if (num1 % i === 0) {
+        //             return false
+        //         }
+        //         i += 1
+        //     }
+        // }
+        // var c = 22
+        // console.log(is_zhishu(c))
+
+        // 写一个函数，能翻转传入的数组['red', 'green', 'blue', 'pink', 'purple']，并把翻转结果通过返回值返回。
+        function reverse_lst(lst1) {
+            var lst2 = []
+            for (var i = lst1.length - 1; i >= 0; i--) {
+                lst2[lst2.length] = lst1[i]
+            }
+            return lst2
+        }
+
+        var lst2 = reverse_lst(['red', 'green', 'blue', 'pink', 'purple'])
+        console.log(lst2)
+
+
+        // 写一个函数，能对传入的数组[10,32,41,8,9,18]按照从小到大进行排序，并把排序结果通过返回值返回
+        function sort_arr(lst) {
+            for (var i = 0; i <= lst.length; i++) {
+                for (var j = i + 1; j<= lst.length; j ++){
+                    if (lst[i] >lst[j]) {
+                        var temp
+                        temp = lst[j]
+                        lst[j] = lst[i]
+                        lst[i] = temp
+                    }
+                }
+            }
+        }
+        var lst = [10,32,41,8,9,9]
+        sort_arr(lst)
+        console.log(lst)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

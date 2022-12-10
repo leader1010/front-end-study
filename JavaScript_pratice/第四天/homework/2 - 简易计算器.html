@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var str = '欢迎使用计算器\n' + '1.加法计算\n' + '2.减法计算\n' + '3.乘法计算\n' + '4.除法计算\n' + '5.退出\n' + '请输入您的选择\n';
+        while (true) {
+
+            var sw = parseInt(prompt(str))
+            if (sw === 5) {
+                break
+            }
+            var num1 = parseInt(prompt('num1'))
+            var num2 = parseInt(prompt('num2'))
+            if (sw === 1) {
+                alert(num1 + num2)
+            } else if (sw === 2) {
+                alert(num1 - num2)
+            } else if (sw === 3) {
+                alert(num1 * num2)
+            } else if (sw === 4) {
+                alert(num1 / num2)
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

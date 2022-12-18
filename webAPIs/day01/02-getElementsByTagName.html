@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+</ul>
+
+<ol id="oli">
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ol>
+
+<script>
+    // 返回元素的集合，如果没有改元素 返回空的集合
+    var lst = document.getElementsByTagName('li')
+    console.log(lst)
+    console.log(lst.length)
+    //    获取ol里的li元素
+    var lst1 = document.getElementById('oli')
+    console.log(lst1.getElementsByTagName('li'))
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="box">盒子</div>
+<div class="box">盒子</div>
+<ol id="nav">
+    <li>首页</li>
+    <li>产品</li>
+</ol>
+
+<script>
+    // H5 方法获取页面元素
+    // 通过class获取元素集合
+    var box = document.getElementsByClassName('box')
+    console.log(box)
+    // querySelector方法可以通过选择器获取标签集合的第一个元素
+    var box1 = document.querySelector('.box') // . 类选择器
+    console.log(box1)
+    var nav = document.querySelector('#nav') // # id选择器
+    console.log(nav)
+    var li = document.querySelector('li') // 标签选择器
+    console.log(li)
+    // querySelectorAll 获取元素集合
+    boxs = document.querySelectorAll('.box')
+    console.log(boxs)
+    console.log(typeof boxs)
+</script>
+
+
+</body>
+</html>

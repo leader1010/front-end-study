@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>
+    delete
+</button>
+<ul>
+    <li>熊大</li>
+    <li>熊二</li>
+    <li>狗头强</li>
+</ul>
+<script>
+    var but = document.querySelector('button')
+    var ul = document.querySelector('ul')
+    but.onclick = function () {
+        if (ul.children.length === 0) {
+            this.disabled = true;
+        } else {
+            ul.removeChild(ul.children[0])
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button class="setTime">
+    settime
+</button>
+<button class="delete">
+    deltiem
+</button>
+<script>
+
+    var del = document.querySelector('.delete')
+    var setTime = document.querySelector('.setTime')
+    var timer = null;// 全局变量  null是一个空对象
+    setTime.onclick = function () {
+        timer = setInterval(function () {
+            console.log(1)
+        }, 1000)
+    }
+    del.onclick = function () {
+        clearInterval(timer)
+    }
+
+
+</script>
+</body>
+</html>

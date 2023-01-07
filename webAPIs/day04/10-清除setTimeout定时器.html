@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>clear</button>
+<script>
+    var but = document.querySelector('button')
+    var timer = setTimeout(function () {
+        alert('boom')
+    }, 5000)
+    but.onclick = function () {
+        clearTimeout(timer)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* css3 盒子模型  盒子最终的大小就是 width  200 的大小 */
+            box-sizing: border-box;
+        }
+
+        div {
+            background-color: #cccccc;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid;
+        }
+
+        p {
+            background-color: pink;
+            /* padding + boder + width + margin */
+            box-sizing: content-box;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <p></p>
+</body>
+</html>

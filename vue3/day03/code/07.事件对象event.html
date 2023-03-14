@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <h3>count的值为: {{count}}</h3>
+    <button style="background-color: red" @click="add">+1</button>
+
+
+</div>
+
+
+<script src="./lib/vue-2.6.12.js"></script>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data: {
+            count: 0
+        },
+        methods: {
+            add(e) {
+                const nowBgColor = e.target.style.backgroundColor
+                e.target.style.backgroundColor = nowBgColor === 'red' ? '' : 'red'
+                this.count += 1
+            }
+        }
+
+    })
+</script>
+</body>
+</html>
